@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+  </head>
+  <body>
+
+<div class="contact-section">
+
+  <h1>Contact Us</h1>
+  <div class="border"></div>
+  <form class="contact-form" autocomplete="off" >
+    <input type="text" name="name" class="contact-form-text" placeholder="Your name" id = "Name">
+    <input type="email" name="email" class="contact-form-text" placeholder="Your email" id="Email">
+    <input type="text" name="phonenumber" class="contact-form-text" placeholder="Your phone" id="Phone">
+    <textarea class="contact-form-text" name="message" placeholder="Your message" id="message"></textarea>
+    <input type="submit" class="contact-form-btn" value="SEND MESSAGE">
+  </form>
+</div>
+  
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyANSnNAqtBw8-SUlkItMakonOLaUpYinEE",
+    authDomain: "genesis-contact.firebaseapp.com",
+    databaseURL: "https://genesis-contact-default-rtdb.firebaseio.com",
+    projectId: "genesis-contact",
+    storageBucket: "genesis-contact.appspot.com",
+    messagingSenderId: "866042026802",
+    appId: "1:866042026802:web:37bd5f94ce85ee9549552b"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  var contactInfo = app.database().ref("infos");
+  
+  // Listen for a submit
+  document.querySelector(".contact-form").addEventListener("submit", submitForm);
+  
+  function submitForm(e) {
+    e.preventDefault();
+  
+    //   Get input Values
+    let name = document.querySelector(".contact-form-text").value;
+    let phone = document.querySelector(".contact-form-text").value;
+    let email = document.querySelector(".contact-form-text").value;
+    let message = document.querySelector(".contact-form-text").value;
+    console.log(name, email, phone, message);
+  
+    saveContactInfo(name, email, phone, message);
+  
+    document.querySelector(".contact-form").reset();
+  }
+  
+  // Save infos to Firebase
+  function saveContactInfo(name, email, phone, message) {
+    let newContactInfo = contactInfo.push();
+  
+    newContactInfo.set({
+      name: name,
+      email: email,
+      phone: phone,
+      message: message,
+    });
+  }
+</script>
+
+
+  </body>
+</html>
