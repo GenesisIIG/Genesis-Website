@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.read-more-btn
+{
+	padding: 15px 60px;
+	background-color: rgb(149, 170, 197);
+	color: rgb(53, 49, 49);
+	border: none;
+	outline: none;
+	font-size: 20px;
+	cursor: pointer;
+  }
+.read-more-btn1 {
+	padding: 15px 60px;
+	background-color: rgb(149, 170, 197);
+	color: rgb(53, 49, 49);
+	border: none;
+	outline: none;
+	font-size: 20px;
+	cursor: pointer;
+  }
+.read-more-btn2 {
+	padding: 15px 60px;
+	background-color: rgb(149, 170, 197);
+	color: rgb(53, 49, 49);
+	border: none;
+	outline: none;
+	font-size: 20px;
+	cursor: pointer;
+  }
+.section{
+	width: 100%;
+	min-height: 100vh;
+	background-color: rgb(22, 19, 19);
+}
+.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+}
+.content-section{
+	float: left;
+	width: 55%;
+	color: #fff;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+.content-section .content h3{
+	margin-top: 20px;
+	color:#fffefe;
+	font-size: 21px;
+}
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.content-section .content .button{
+	margin-top: 30px;
+}
+.content-section .content .button a{
+	background-color: #dd7171;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+	background-color: #a52a2a;
+	color:rgb(99, 64, 64);
+}
+.content-section .social{
+	margin: 40px 40px;
+}
+.content-section .social i{
+	color:#a52a2a;
+	font-size: 30px;
+	padding:0px 10px;
+}
+.content-section .social i:hover{
+	color:#a04d4d;
+}
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-section{
+	float:none;
+	width:100%;
+
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+.content-section .content .button{
+	text-align: center;
+}
+.content-section .content .button a{
+	padding:9px 30px;
+}
+.content-section .social{
+	text-align: center;
+}
+
+}
+
+
+
+
+
+
+
+body{
+	margin:0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+.container1{
+	width: 100%;
+	height: 120vh;
+	display: flex;
+	/* justify-content: center;
+	align-items: center; */
+	flex-direction: column;
+	background-image: url(bg3.jpg);
+	background-size: cover;
+	background-position: center center;
+	color: #fff;
+	padding: 0
+}
+
+.about-us{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-direction: column;
+}
+.social-media{
+	width: 90%;
+	display: flex;
+	justify-content: flex-end;
+}
+.social-media i{
+	margin:10px;
+}
+.active{
+	border-bottom: 1px solid #fff;
+}
+
+.alumniPhoto {
+  display: block;
+  width: 900px;
+  height: 550px;
+  margin: auto;
+	padding-top: 50px;
+}
+.bax{
+  padding-left: 360px;
+  padding-top: 20px;
+}
+.bax1{
+	padding-left: 320px;
+  padding-top: 20px;
+	}
+.year {
+	text-align: center;
+	color: black;
+  padding-top: 35px;
+	font-weight: 600;
+}
+.year18 {
+	text-align: center;
+	color: white;
+  padding-top: 35px;
+	font-weight: 600;
+
+}
+.tab {
+	height: 150px;
+	width: 250px;
+	background-color: white;
+}
+.tab1{
+	height: 150px;
+	width: 250px;
+	background-color: blue;
+}
+.photo img{
+    width: 15vw;
+    height: 35vh;
+    border-radius: 50%;
+}
+
+.alumniInfo{
+  font-size: 20px;
+  padding: 30px;
+}
+.AB{
+  font-size: 30px;
+}
+.E{
+	padding-left: 50px;
+}
+.F{
+	padding-right: 50px;
+}
+.G{
+	padding-right: 20px;
+}
+
+.CD{
+  padding-left: 10px;
+  border-radius: 0%;
+  width: 150px;
+  height: 60px;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-family: "calibri";
+}
+.body {
+	background-image: url(bg3.jpg);
+	height: 3350px;
+	color: #fff;
+}
+.icon1 {
+	padding-left: 50px;
+	}
+.icon2 {
+		padding-left: 15px;
+		}
+.Tagline {
+	font-style: oblique;
+}
+.batch1{
+	text-decoration: none;
+}
